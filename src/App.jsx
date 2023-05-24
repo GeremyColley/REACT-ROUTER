@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Header from './components/Header';
 import You from './pages/You';
 import Me from './pages/Me';
+import Default from './pages/Default';
 
 /*****************************************************
  * 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/about/you" element={<You />} />
         </Route>
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Default />} />
         
       </Routes>
     </Router>
