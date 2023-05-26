@@ -1,8 +1,8 @@
-import { useLocation , Link} from "react-router-dom"; // Import des hooks spécifique de React-Router-Dom
+import { useLocation , useNavigate,  Link} from "react-router-dom"; // Import des hooks spécifique de React-Router-Dom
 
 const Header = () => {
     
-    //const navigate = useNavigate(); // Pour utiliser navigate pour pouvoir effectuer les redirections
+    const navigate = useNavigate(); // Pour utiliser navigate pour pouvoir effectuer les redirections
     const location = useLocation(); // Pour savoir dans quel route on est. Pour utiliser location.pathname
     console.log(location.pathname);
 
@@ -24,6 +24,11 @@ const Header = () => {
                 </div>
             )}
             <br/>
+            <button onClick={() => navigate(-1)}>Go back</button>
+            <br/>
+            <button onClick={() => navigate(1)}>
+                Go forward
+            </button>
         </div>
     );
 };
