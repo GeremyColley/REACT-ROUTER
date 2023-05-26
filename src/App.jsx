@@ -12,15 +12,10 @@ import Default from './pages/Default';
 import Product from './pages/Product';
 
 /*****************************************************
- * 
- * 
  * Router :
- * 
- * Switch :
  * 
  * 
  * Link : pour naviguer souvent déclarer dans un composant annexe.
- * 
  * 
  * 
  */
@@ -38,7 +33,6 @@ function App() {
         <Route path='/product/:id' element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Default />} />
-        
       </Routes>
     </Router>
   )
