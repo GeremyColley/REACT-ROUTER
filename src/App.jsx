@@ -9,6 +9,7 @@ import Header from './components/Header';
 import You from './pages/You';
 import Me from './pages/Me';
 import Default from './pages/Default';
+import Product from './pages/Product';
 
 /*****************************************************
  * 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/about/me" element={<Me />} />
           <Route path="/about/you" element={<You />} />
         </Route>
+        <Route path='/product/:id' element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Default />} />
         

@@ -8,15 +8,22 @@ const Header = () => {
 
     return (
         <div>
-            <h2>{location.pathname}</h2>
-            {location.pathname === "/" ? null :(
+            <h2>File d'ariane : {location.pathname}</h2>
+            {location.pathname === "/" ? (<Link to="/about">about</Link>) : (
                 <div>
                     <h1>barre de menu</h1>
+                    <nav>
+                        <Link to="/">Home</Link>
+                        <br/>
+                        <Link to="/about">about</Link>
+                        <br/>
+                        <Link to="/contact">contact</Link>
+                        <br/>
+                        <Link to="/product/12">product</Link>
+                    </nav>
                 </div>
             )}
-            <Link to="/">Home</Link>
-            <Link to="/about">about</Link>
-            <Link to="/contact">contact</Link>
+            <br/>
         </div>
     );
 };
