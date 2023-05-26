@@ -16,8 +16,8 @@ import Product from './pages/Product';
  * 
  * 
  * Link : pour naviguer souvent déclarer dans un composant annexe.
- * 
- * 
+ *  https://reactrouter.com/en/main/start/tutorial
+ *   {favorite ? "★" : "☆"}
  */
 
 function App() {
